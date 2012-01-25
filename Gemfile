@@ -10,7 +10,7 @@ gem 'shopify_api'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :development do
+group :assets do
   gem 'sprockets'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
