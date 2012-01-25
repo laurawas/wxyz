@@ -3,6 +3,7 @@ Wxyz::Application.routes.draw do
   root :to => 'wxyzers#new'
   match 'lookbook' => 'pages#lookbook', :as => 'lookbook'
   match 'collection' => 'pages#collection', :as => 'collection'
+  match 'collection/:group' => 'pages#group', :as => 'group'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wxyz</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="yellowgrid">
+
+    <nav id="sitenav">
+      <%= link_to image_tag('wxyz.png', :id => 'logo') %>
+      <%= link_to 'ABOUT' %>
+      <%= link_to 'COLLECTION', collection_path %>
+      <%= link_to 'LOOKBOOK', lookbook_path %>
+      <%= link_to 'CONTACT', new_wxyzer_path %>
+      <%= link_to 'BLOG', 'http://laurawas.tumblr.com' %>
+      <div class="full_width">
+    </nav>
+
+    <div id="container">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
