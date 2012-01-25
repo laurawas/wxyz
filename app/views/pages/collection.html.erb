@@ -1,9 +1,11 @@
 <div class="collection portal heading" href="<%= group_path(:group => 'necklace') %>">
   NECKLACES
 </div>
-<div class="collection portal" href="<%= group_path(:group => 'necklace') %>">
-  <%= image_tag 'necklace.jpg' %>
-</div>
+<%= link_to group_path(:group => 'necklace') do %>
+  <div class="collection portal">
+    <%= image_tag 'necklace.jpg' %>
+  </div>
+<% end %>
 <div class="collection portal heading" href="<%= group_path(:group => 'bracelet') %>">
   BRACELETS
 </div>
@@ -17,4 +19,4 @@
 <div class="collection portal" href="<%= group_path(:group => 'necklace') %>">
   <%= image_tag 'necklace.jpg' %>
 </div>
-<%= cleardiv%>
+<%= cleardiv %>

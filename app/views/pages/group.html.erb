@@ -1,0 +1,4 @@
+<% @pieces.each do |piece| %>
+  <%= piece.attributes[:title] %>
+  <%= image_tag piece.images.first.src %>
+<% end %>

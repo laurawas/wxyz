@@ -8,6 +8,6 @@ class PagesController < ApplicationController
   end
   
   def group
-    @pieces = ShopifyAPI::Product.all(:product_type => params[:group])
+    @pieces = ShopifyAPI::Product.all(:conditions => {:product_type => params[:group]})
   end
 end
