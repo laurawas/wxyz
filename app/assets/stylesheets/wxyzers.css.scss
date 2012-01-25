@@ -1,0 +1,64 @@
+// Place all the styles related to the wxyzers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face { font-family: MS Gothic; src: asset-url('MS-Gothic.ttf', 'stylesheet'); } 
+
+body {
+	color: black;
+	font-family: MS Gothic;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: #B1D81D;
+}
+
+#sitenav {
+	height: 52px;
+	border: 7px solid black;
+	vertical-align: center;
+	padding: 13px;
+	margin-left: 23px;
+	margin-right: 23px;
+}
+
+#logo {
+	height: 74px;
+	margin-top: -7px;
+	vertical-align: middle;
+}
+
+#sitenav a {
+	font-size: 36px;
+	padding: 14px;
+	height: 50px;
+	text-decoration: none;
+	vertical-align: center;
+}
+
+#container {
+	text-align: center;
+	margin-top: 70px;
+}
+
+.lookbook {
+	width: 92%;
+	opacity: 1;
+  -webkit-transition: opacity 1s linear;
+}
+
+.lookbook.veiled {
+	opacity: 0;
+	display: none;
+}
+
+.lookbook.elapsed {
+	display: none;
+}
+
+.full_width {
+	width: 100%;
+}

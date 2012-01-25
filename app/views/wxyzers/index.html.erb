@@ -1,0 +1,31 @@
+<h1>Listing wxyzers</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Site</th>
+    <th>Inquiry</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wxyzers.each do |wxyzer| %>
+  <tr>
+    <td><%= wxyzer.first_name %></td>
+    <td><%= wxyzer.last_name %></td>
+    <td><%= wxyzer.email %></td>
+    <td><%= wxyzer.site %></td>
+    <td><%= wxyzer.inquiry %></td>
+    <td><%= link_to 'Show', wxyzer %></td>
+    <td><%= link_to 'Edit', edit_wxyzer_path(wxyzer) %></td>
+    <td><%= link_to 'Destroy', wxyzer, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wxyzer', new_wxyzer_path %>
