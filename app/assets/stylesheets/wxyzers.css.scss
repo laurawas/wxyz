@@ -60,6 +60,25 @@ a:hover {
 	display: none;
 }
 
+.notice {
+	font-size: 3em;
+}
+
+#contact, #mailing {
+	float: left;
+	font-size: 30px;
+	text-align: left;
+	padding: 10%;
+	padding-top: 0px;
+}
+
+#about {
+	text-align: left;
+	font-size: 30px;
+	padding: 15%;
+	padding-top: 0px;
+}
+
 .full_width {
 	width: 100%;
 }

@@ -44,7 +44,7 @@ class WxyzersController < ApplicationController
 
     respond_to do |format|
       if @wxyzer.save
-        format.html { redirect_to @wxyzer, notice: 'Wxyzer was successfully created.' }
+        format.html { redirect_to new_wxyzer_path, notice: 'GOT IT.' }
         format.json { render json: @wxyzer, status: :created, location: @wxyzer }
       else
         format.html { render action: "new" }
