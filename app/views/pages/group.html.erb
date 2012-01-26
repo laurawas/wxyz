@@ -1,4 +1,7 @@
-<% @pieces.each do |piece| %>
-  <%= piece.attributes[:title] %>
-  <%= image_tag piece.images.first.src %>
-<% end %>
+<div class="collection_pieces">
+  <% @pieces.each do |piece| %>
+    <%= div_for piece, :class => 'shopify_api_product' do %>
+      <%= image_tag piece.images.first.src %>
+    <% end %>
+  <% end %>
+</div>
