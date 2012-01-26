@@ -8,6 +8,7 @@
 /.bundle
 
 /config/database.yml
+/config/initializers/shopify.rb
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
