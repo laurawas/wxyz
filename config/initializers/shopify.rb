@@ -1,1 +1,1 @@
-ShopifyAPI::Base.site = "https://#{SHOPIFY_USERNAME}:#{SHOPIFY_PASSWORD}@wxyz-jewelry.myshopify.com/admin"
+ShopifyAPI::Base.site = "https://#{ENV['SHOPIFY_USERNAME']}:#{ENV['SHOPIFY_PASSWORD']}@wxyz-jewelry.myshopify.com/admin"
