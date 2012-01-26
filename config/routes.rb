@@ -5,7 +5,8 @@ Wxyz::Application.routes.draw do
   match 'collection' => 'pages#collection', :as => 'collection'
   match 'collection/:group' => 'pages#group', :as => 'group'
   match 'about' => 'pages#about', :as => 'about'
-
+  match 'landing' => 'pages#landing', :as => 'landing'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
