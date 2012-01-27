@@ -1,0 +1,38 @@
+.movement {
+	position: relative;
+	top: -300px;
+}
+
+.lookbook {
+	width: 92%;
+	position: relative;
+	top: 0px;
+	opacity: 1;
+  -webkit-transition: opacity 400ms linear;
+}
+
+.lookbook.faded {
+	opacity: 0;
+	-webkit-transition: opacity 1000ms linear;
+}
+
+.lookbook.veiled, .lookbook.elapsed {
+	display: none;
+}
+
+.half_nav {
+	position: absolute;
+	width: 45.5%;
+	height: 81%;
+}
+
+.half_nav .box {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+
+.half_nav .box#forward {
+	left: 100%;
+}
