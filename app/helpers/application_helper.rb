@@ -15,7 +15,8 @@ module ApplicationHelper
   end
   
   def footer
-    content_tag :div, :class => 'footer' do
+    cleardiv +
+    content_tag(:div, :class => 'footer') do
       "copyright 2012 WXYZ Jewelry"
     end
   end

@@ -68,8 +68,18 @@ a:hover {
 }
 
 img.landing {
-	width: 48%;
+	height: 448px;
 	float: left;
+}
+
+img.landing#left_landing {
+  margin-right: 58px;
+}
+
+#spacer {
+  float: left;
+  width: 9%;
+  height: 10px
 }
 
 .full_width {
