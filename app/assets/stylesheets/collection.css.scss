@@ -1,7 +1,12 @@
+body {
+	margin: 0px;
+}
+
 .yellowgrid {
 	background: url('grid.png') 0 0;
 	background-repeat-x: repeat-x;
 	background-repeat-y: repeat-y;
+	height: 800px;
 }
 
 .portal_container {
