@@ -14,7 +14,7 @@ function show_next_image() {
 	$('.lookbook.shown').addClass('faded');
 	setTimeout("$('.lookbook.shown').removeClass('shown').addClass(designation); \
 	            $(next_one).addClass('shown').removeClass('veiled');", 400);
-	setTimeout("$(next_one).removeClass('faded');", 500);
+	setTimeout("$(next_one).removeClass('faded'); ensure_showing();", 500);
 }
 
 function show_previous_image() {
@@ -30,5 +30,9 @@ function show_previous_image() {
 	$(shown).removeClass('shown').addClass('faded');
 	setTimeout("$(shown).addClass(designation); \
 	            $(next_one).addClass('shown').removeClass('veiled').removeClass('elapsed');", 400);
-	setTimeout("$(next_one).removeClass('faded');", 500);
+	setTimeout("$(next_one).removeClass('faded'); ensure_showing();", 500);
+}
+
+function ensure_showing() {
+	$('.shown').removeClass('elapsed').removeClass('veiled').removeClass('faded');
 }
