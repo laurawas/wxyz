@@ -1,32 +1,32 @@
 <div id="portal_container">
   <%= link_to group_path(:group => 'necklace') do %>
-    <div class="collection portal heading" href="<%= group_path(:group => 'necklace') %>">
+    <div class="collection portal heading stasis" href="<%= group_path(:group => 'necklace') %>">
       NECKLACES
     </div>
   <% end %>
   <%= link_to group_path(:group => 'ring') do %>
-    <div class="collection portal">
+    <div class="collection portal stasis">
       <%= image_tag 'RING.jpg' %>
     </div>
   <% end %>
   <%= link_to group_path(:group => 'bracelet') do %>
-    <div class="collection portal heading" href="<%= group_path(:group => 'bracelet') %>">
+    <div class="collection portal heading stasis" href="<%= group_path(:group => 'bracelet') %>">
       BRACELETS
     </div>
   <% end %>
   <%= cleardiv %>
   <%= link_to group_path(:group => 'necklace') do %>
-    <div class="collection portal" href="<%= group_path(:group => 'necklace') %>">
+    <div id="basis" class="collection portal" href="<%= group_path(:group => 'necklace') %>">
       <%= image_tag 'NECKLACES.jpg' %>
     </div>
   <% end %>
   <%= link_to group_path(:group => 'ring') do %>
-    <div class="collection portal heading" href="<%= group_path(:group => 'ring') %>">
+    <div class="collection portal heading stasis" href="<%= group_path(:group => 'ring') %>">
       RINGS
     </div>
   <% end %>
   <%= link_to group_path(:group => 'bracelet') do %>
-    <div class="collection portal" href="<%= group_path(:group => 'bracelet') %>">
+    <div class="collection portal stasis" href="<%= group_path(:group => 'bracelet') %>">
       <%= image_tag 'BRACELETS.jpg' %>
     </div>
   <% end %>

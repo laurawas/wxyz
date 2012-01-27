@@ -10,22 +10,26 @@
 }
 
 .collection.portal.heading {
-	padding-top: 9%;
-	padding-bottom: 9%;
+	padding-top: 9.5%;
+	padding-bottom: 9.5%;
+	border: 7px solid;
 }
 
 .collection.portal {
-	border: 7px solid;
-	width: 23%;
-	margin: 1.1%;
   display: inline-block;
-	
+	margin: 1.1%;	
 	font-size: 51px;
 	vertical-align: top;
+	width: 23%;
 }
 
 .collection.portal img {
-	width: 97%;
+	border: 7px solid;
+	width: 100%;
+}
+
+#basis {
+	width: 23%;
 }
 
 .collection_pieces {
