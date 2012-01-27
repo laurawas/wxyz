@@ -15,7 +15,16 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $('.fancybox').fancybox();
+    $('.fancybox').fancybox({beforeLoad: function(e) {
+			$('.fancybox').each(function(i, img) {
+				$(img).attr('title', $(img).data('fancybox-title'));
+			});
+		},
+	afterClose: function(e) {
+		$('.fancybox').each(function(i, img) {
+			$(img).attr('title', '')
+		});
+	}});
 });
 function show_next_image() {
 	var next_one = $('.lookbook.veiled')[0];

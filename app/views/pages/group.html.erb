@@ -1,7 +1,10 @@
 <div class="collection_pieces">
   <% @pieces.each do |piece| %>
     <%= div_for piece, :class => 'shopify_api_product' do %>
-      <%= link_to image_tag(piece.images.first.src), piece.images.first.src, :class => 'fancybox', :title => piece.attributes[:title], :'data-fancybox-group' => 'gallery' %>
+      <%= link_to image_tag(piece.images.first.src), piece.images.first.src, :class => 'fancybox', :'data-fancybox-title' => piece.attributes[:title], :'data-fancybox-group' => 'gallery' %>
+      <%= div_for piece, :title do %>
+        <%= piece.attributes[:title] %>
+      <% end %>
     <% end %>
   <% end %>
 </div>

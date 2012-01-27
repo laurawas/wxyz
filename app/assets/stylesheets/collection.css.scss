@@ -4,19 +4,24 @@
 	background-repeat-y: repeat-y;
 }
 
+.portal_container {
+	text-align: center;
+	vertical-align: top;
+}
+
 .collection.portal.heading {
-	padding-top: 13%;
-	padding-bottom: 13%;
+	padding-top: 9%;
+	padding-bottom: 9%;
 }
 
 .collection.portal {
 	border: 7px solid;
-	width: 30%;
+	width: 23%;
 	margin: 1.1%;
-	float: left;
+  display: inline-block;
 	
 	font-size: 51px;
-	vertical-align: center;
+	vertical-align: top;
 }
 
 .collection.portal img {
@@ -29,6 +34,7 @@
 
 .shopify_api_product {
 	float: left;
+	position: relative;
 	padding: 11px;
 	border-right: 2px #B1D81D solid;
 	border-bottom: 2px #B1D81D solid;
@@ -36,4 +42,17 @@
 
 .shopify_api_product img {
 	width: 200px;
+}
+
+.title_shopify_api_product {
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	position: absolute;
+	top: 1px;
+	display: none;
+}
+
+.shopify_api_product:hover .title_shopify_api_product {
+	display: block;
 }
