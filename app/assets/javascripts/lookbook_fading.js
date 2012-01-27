@@ -6,7 +6,7 @@ function show_next_image() {
 	$('.lookbook.shown').addClass('faded');
 	setTimeout("$('.lookbook.shown').removeClass('shown').addClass('elapsed'); \
 	            $(next_one).addClass('shown').removeClass('veiled');", 400);
-	setTimeout("$(next_one).removeClass('faded');", 410);
+	setTimeout("$(next_one).removeClass('faded');", 500);
 }
 
 function show_previous_image() {
@@ -15,5 +15,5 @@ function show_previous_image() {
 	$(shown).removeClass('shown').addClass('faded');
 	setTimeout("$(shown).addClass('veiled'); \
 	            $(next_one).addClass('shown').removeClass('elapsed');", 400);
-	setTimeout("$(next_one).removeClass('faded');", 410);
+	setTimeout("$(next_one).removeClass('faded');", 500);
 }
