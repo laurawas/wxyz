@@ -25,6 +25,7 @@ a:hover {
 	margin-left: 23px;
 	margin-right: 23px;
 	background: white;
+	min-width: 1110px;
 }
 
 #logo {
@@ -35,7 +36,10 @@ a:hover {
 
 #sitenav a {
 	font-size: 36px;
-	padding: 14px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 3%;
+	padding-right: 3%;
 	height: 50px;
 	vertical-align: center;
 }
