@@ -1,5 +1,8 @@
-$(window).bind('resize', function() {
-	console.log()
-	$('.stasis').css('width', $('#basis').css('width'));
-	$('.stasis').css('height', $(this).css('width'));
-});
+$(function() {
+	$('.portal img').mouseover(function() {
+		$(this).attr('src', $(this).attr('src').split('.')[0] + '-title.png');
+	});
+	$('.portal img').mouseout(function() {
+		$(this).attr('src', $(this).attr('src').split('-')[0] + '.png');
+	});
+})
