@@ -56,12 +56,18 @@ a:hover {
 
 .lookbook {
 	width: 92%;
-	opacity: 1;
-  -webkit-transition: opacity 1s linear;
+/*	position: relative;
+	top: 0px;
+*/	opacity: 1;
+  -webkit-transition: opacity 400ms linear;
+}
+
+.lookbook.faded {
+	opacity: 0;
+	-webkit-transition: opacity 1000ms linear;
 }
 
 .lookbook.veiled {
-	opacity: 0;
 	display: none;
 }
 
