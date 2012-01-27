@@ -13,4 +13,10 @@ module ApplicationHelper
   def cleardiv
     content_tag :div, nil, :class => 'clearboth'
   end
+  
+  def footer
+    content_tag :div, :class => 'footer' do
+      "copyright 2012 WXYZ Jewelry"
+    end
+  end
 end

@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 
+$(document).ready(function() {
+    $('.fancybox').fancybox();
+});
 function show_next_image() {
 	var next_one = $('.lookbook.veiled')[0];
 	$('.lookbook.shown').removeClass('shown').addClass('elapsed');
