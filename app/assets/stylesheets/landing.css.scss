@@ -1,0 +1,27 @@
+#landing_container {
+	text-align: center;
+	position: relative;
+	height: 448px;
+}
+
+img.landing, img.landing_animation {
+	height: 448px;
+	width: 448px;
+	position: absolute;
+}
+
+img.landing {
+	z-index: 3;
+}
+
+#left_landing, #left_gif {
+	left: 10%;
+}
+
+#right_landing, #right_gif {
+	right: 10%;
+}
+
+img.landing#left_landing:hover, img.landing#right_landing:hover {
+	opacity: 0;
+}

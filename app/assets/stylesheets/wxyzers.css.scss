@@ -5,7 +5,7 @@
 
 body {
 	color: black;
-	font-family: MS Gothic;
+	font-family: "MS Gothic", "Trebuchet MS";
 }
 
 a {
@@ -65,21 +65,6 @@ a:hover {
 	font-size: 28px;
 	padding: 15%;
 	padding-top: 0px;
-}
-
-img.landing {
-	height: 448px;
-	float: left;
-}
-
-img.landing#left_landing {
-  margin-right: 58px;
-}
-
-#spacer {
-  float: left;
-  width: 9%;
-  height: 10px
 }
 
 .full_width {
