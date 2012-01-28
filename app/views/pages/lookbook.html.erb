@@ -13,3 +13,11 @@
   <%= image_tag 'LOOKBOOK9.jpg', :class => 'lookbook veiled faded' %>
   <%= link_to_function image_tag('arrow.png'), "show_next_image()", :class => 'movement' %>
 </div>
+
+<% content_for :scripts do %>
+  <script type="text/javascript">
+    $(function() {
+      $('#lookbook').ScrollTo({duration: 2500});
+    });
+  </script>
+<% end %>
