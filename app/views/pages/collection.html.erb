@@ -2,24 +2,27 @@
   <%= link_to group_path(:group => 'ring') do %>
     <div class="collection portal">
       <%= image_tag 'RINGS.png' %>
+      <div class="title">
+        RINGS
+      </div>
     </div>
   <% end %>
 
   <%= link_to group_path(:group => 'necklace') do %>
     <div class="collection portal" href="<%= group_path(:group => 'necklace') %>">
       <%= image_tag 'NECKLACES.png' %>
+      <div class="title">
+        NECKLACES
+      </div>
     </div>
   <% end %>
 
   <%= link_to group_path(:group => 'bracelet') do %>
     <div class="collection portal" href="<%= group_path(:group => 'bracelet') %>">
       <%= image_tag 'BRACELETS.png' %>
+      <div class="title">
+        BRACELETS
+      </div>
     </div>
   <% end %>
-</div>
-
-<div style="display:none">
-  <%= image_tag 'RINGS-title.png' %>
-  <%= image_tag 'NECKLACES-title.png' %>
-  <%= image_tag 'BRACELETS-title.png' %>
 </div>
