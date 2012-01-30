@@ -27,7 +27,7 @@ class WxyzersController < ApplicationController
     @wxyzer = Wxyzer.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => 'yellow_grid' }
       format.json { render json: @wxyzer }
     end
   end

@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
   
   def about
-    
+    render :layout => 'yellow_grid'
   end
   
   def lookbook
