@@ -21,3 +21,8 @@
     });
   </script>
 <% end %>
+
+<% content_for :metatags do %>
+  <%= content_tag :meta, nil, :name => 'description', :content => 'WXYZ Jewelry Fall 2012 lookbook' %>
+  <%= content_tag :meta, nil, :name => 'keywords', :content => 'lookbook, look book' %>
+<% end %>

@@ -26,3 +26,8 @@
     </div>
   <% end %>
 </div>
+
+<% content_for :metatags do %>
+  <%= content_tag :meta, nil, :name => 'description', :content => 'Images of rings, necklaces and bracelets from the Fall 2012 collection' %>
+  <%= content_tag :meta, nil, :name => 'keywords', :content => 'necklace, necklaces, ring, rings, bracelet, bracelets, gold plated, silver plated, gunmetal plated' %>
+<% end %>

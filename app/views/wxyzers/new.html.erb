@@ -16,3 +16,7 @@
   Let's be in touch.<br><br>
   <%= render 'form' %>
 </div>
+<% content_for :metatags do %>
+  <%= content_tag :meta, nil, :name => 'description', :content => 'WXYZ Jewelry is designed and based in New York.  For wholesale inquiries, please contact wass@wxyzjewelry.com or call 917.719.6671.  Let\'s be in touch - please join our mailing list.' %>
+  <%= content_tag :meta, nil, :name => 'keywords', :content => 'wholesale, wholesale contact, phone number, email address, mailing list' %>
+<% end %>

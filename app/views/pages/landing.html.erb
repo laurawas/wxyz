@@ -1,1 +1,5 @@
 <%= image_tag 'AMIT-AND-COCO-SQUARES-FINAL.jpg' %>
+<% content_for :metatags do %>
+  <%= content_tag :meta, nil, :name => 'description', :content => 'WXYZ Jewelry is a New York based fashion jewelry brand, which is launching for Fall 2012.  See the lookbook and collection sections for images of the Fall 12 line.' %>
+  <%= content_tag :meta, nil, :name => 'keywords', :content => 'WXYZ Jewelry, fashion jewelry, costume jewelry, emerging designer' %>
+<% end %>
