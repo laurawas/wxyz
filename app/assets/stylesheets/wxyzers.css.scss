@@ -1,11 +1,10 @@
 // Place all the styles related to the wxyzers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@font-face { font-family: MS Gothic; src: url('MS-Gothic.ttf'); } 
 
 body {
 	color: black;
-	font-family: "MS Gothic", "Trebuchet MS";
+	font-family: "Trebuchet MS";
 }
 
 a {
@@ -41,7 +40,7 @@ a:hover {
 }
 
 #sitenav a {
-	font-size: 36px;
+	font-size: 31px;
 	padding-top: 14px;
 	padding-bottom: 14px;
 	height: 50px;
@@ -51,14 +50,14 @@ a:hover {
 
 @media all and (max-width:65em) {
 	#sitenav a {
-		font-size: 30px;
+		font-size: 25px;
 		padding-right: 4%;
 	}
 }
 
 @media all and (max-width:55em) {
 	#sitenav a {
-		font-size: 26px;
+		font-size: 23px;
 		padding-right: 3%;
 	}
 }
