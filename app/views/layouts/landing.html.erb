@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WXYZ</title>
+  <%= stylesheet_link_tag    "application", "jquery.fancybox", 'jquery.fancybox-buttons', 'jquery.fancybox-thumbs', :media => "all" %>
+  <%= javascript_include_tag "application", "jquery.fancybox", "jquery.fancybox-buttons", 'jquery.fancybox-thumbs', 'jquery.scrollto' %>
+  <%= csrf_meta_tags %>
+  <%= google_analytics %>
+</head>
+<body>
+  <%= nav %>
+
+  <div class="centered">
+    <%= yield %>
+  </div>
+
+  <%= footer %>
+  <%= yield :scripts %>
+</body>
+</html>
