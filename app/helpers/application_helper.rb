@@ -6,7 +6,7 @@ module ApplicationHelper
       link_to('COLLECTION', collection_path) +
       link_to('ABOUT', about_path) +
       link_to('CONTACT', new_wxyzer_path) +
-      link_to('BLOG', 'http://wxyznyc.com')
+      link_to('BLOG', 'http://wxyznyc.com', :id => 'bloglink')
     end
   end
   

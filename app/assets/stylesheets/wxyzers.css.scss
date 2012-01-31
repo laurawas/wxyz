@@ -22,11 +22,12 @@ a:hover {
 	border: 7px solid black;
 	vertical-align: center;
 	padding: 13px;
+	padding-right: 0px;
 	margin-left: 23px;
 	margin-right: 23px;
 	margin-top: 11px;
 	background: white;
-	min-width: 995px;
+	min-width: 708px;
 }
 
 #logo {
@@ -35,13 +36,31 @@ a:hover {
 	vertical-align: middle;
 }
 
+#sitenav a#bloglink {
+	padding-right: 0px;
+}
+
 #sitenav a {
 	font-size: 36px;
 	padding-top: 14px;
 	padding-bottom: 14px;
-	padding-right: 5%;
 	height: 50px;
 	vertical-align: center;
+	padding-right: 4%;
+}
+
+@media all and (max-width:65em) {
+	#sitenav a {
+		font-size: 30px;
+		padding-right: 4%;
+	}
+}
+
+@media all and (max-width:55em) {
+	#sitenav a {
+		font-size: 26px;
+		padding-right: 3%;
+	}
 }
 
 #container {
@@ -57,7 +76,7 @@ a:hover {
 	float: left;
 	font-size: 30px;
 	text-align: left;
-	padding: 10%;
+	padding: 8%;
 	padding-top: 0px;
 }
 
