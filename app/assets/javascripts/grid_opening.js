@@ -1,5 +1,5 @@
 $(function() {
-	if($('.shopify_api_product').length != 0) { // we are on the product gallery page
+	if(false && $('.shopify_api_product').length != 0) { // we are on the product gallery page
 		setTimeout("open_grid();", 500);
 		setTimeout("open_grid();", 1000);
 		setTimeout("open_grid();", 5000);
