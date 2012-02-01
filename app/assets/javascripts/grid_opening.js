@@ -20,10 +20,8 @@ function open_grid() {
 		}
 	});
 	var incomplete_row = false;
-	var relevant_offset = 250;
 	if($(rightmost).position().left > $(lasty).position().left) {
 		incomplete_row = true;
-		relevant_offset = 350;
 	}
 	
 	$('.shopify_api_product').each(function(i, piece) {
@@ -31,7 +29,7 @@ function open_grid() {
 		if(nexty && $(nexty).position().left < 50) {
 			$(piece).css('border-right', 'none');
 		}
-		if($(piece).position().top > (collection_height - relevant_offset)) {
+		if($(piece).position().top > (collection_height - 250)) {
 			$(piece).css('border-bottom', 'none');
 		}
 	});
