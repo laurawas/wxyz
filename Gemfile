@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.0'
+gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,6 +24,8 @@ end
 group :development do
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'rspec-rails'
+  gem 'rr'
 end
 
 group :production do
