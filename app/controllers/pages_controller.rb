@@ -16,6 +16,6 @@ class PagesController < ApplicationController
   end
   
   def group
-    @pieces = ShopifyAPI::Product.all(:conditions => {:product_type => params[:group]}).select { |p| p.product_type == params[:group] }
+    @pieces = ShopifyAPI::Product.all :params => {:limit => 250, :product_type => params[:group]}
   end
 end
